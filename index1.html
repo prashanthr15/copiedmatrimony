@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BEST CHOICE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="images/favicon.jpg">
+          <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 400;
+              font-display: swap;
+              src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 700;
+              font-display: swap;
+              src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 900;
+              font-display: swap;
+              src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            
+            body{font-family:Lato, sans-serif;}
+            #bmfont {font-family: Lato, sans-serif;}
+            </style>
+            </head>
+
+<body>
+    <center>
+            
+        <div class="hpmainwraper">
+        <div class="pos-relative hp-wrapper">
+        <div class="logotop">
+        <div class="logotxt">From</div>
+        <div itemscope="" itemtype="http://schema.org/ImageObject"><img class="bmlogo-width" border="0" title="Best Choice" alt="Best Choice" src="images/image.jpg" itemprop="contentUrl"></div>
+        </div>
+        </div>
+        <!-- Registration Part Start-->		
+        
+        <div class="dhoni-bg"> 
+        <div class="mob-padd">
+            <div class="hpmainwraper pos-relative" id="login-scroll" onclick="regPDLogTrackAjax('header-part')">
+                <!-- Header -->
+                <div class="innerwrapper pos-relative paddt10 dh-hdrwid">
+                                        
+                    <div class="fright dh-hdrmenu-rt" style="position:relative;">	
+                    
+                    
+<div id="loginpopup" class="loginoverlay">
+<div class="loginpopup">
+<form name="Login" method="post" action="" style="margin:0px; display:inline;">
+<input type="hidden" value="" name="fpDT" id="fpDT"> 
+<div style="position: absolute;top:10px;right: 10px;"><a style="color:#a8a8a8;font-size: 24px;text-decoration: none;" class="close" href="#">×</a></div>
+<div style="color:#000;font-size: 18px;" class="txt-center boldtxt paddt5 paddb10">LOGIN</div>
+<div style="color:#777;font-size: 15px;" class="boldtxt paddt20 txt-left">Matrimony Id / Mobile No. / E-mail</div>
+<div class="paddt5 txt-left">
+<input type="text" name="ID" id="ID" class="hp-txtBox" style="width: 280px;padding:9px;border-radius: 5px;font-size: 14px;font-weight: normal;" tabindex="5"> 
+ 
+ </div>
+ <div id="loginid" style="color:#F44336;font-size: 12px;padding-top: 6px;display: none" class="boldtxt paddt15 txt-left">Please enter your Matrimony Id / E-mail Id / Mobile Number.</div>
+
+ <div style="color:#777;font-size: 15px;" class="boldtxt paddt15 txt-left">Password </div>
+
+<div class="paddt5 txt-left">
+<input type="password" autocomplete="off" onblur="temppasswordFieldBlur(this, 'TEMPPASSWD1');if (this.value == '') { this.value = 'Password'; }" onfocus="$('#ID').removeClass('errorbg')" style="width: 280px;padding:9px;border-radius: 5px; display:none;font-size: 14px;font-weight: normal;" size="25" tabindex="6" class="hp-txtBox TEMPPASSWD1 passwordhome" id="PASSWORD" name="PASSWORD" maxlength="20">
+<input type="text" autocomplete="off" style="width: 280px;padding:9px;border-radius: 5px; display:block;font-size: 14px;font-weight: normal;" onfocus="orgPasswordField(this, 'PASSWORD')" tabindex="6" size="25" class="hp-txtBox TEMPPASSWD1" id="TEMPPASSWD1" name="TEMPPASSWD1">
+</div>		
+ <div id="passwd" style="color:#F44336;font-size: 12px;padding-top: 6px;display: none" class="boldtxt paddt15 txt-left">Please enter your Password.</div>
+<div id="dispstylgn" style="display: block;" class="paddt15 txt-left paddb5"><input type="checkbox" class="radiomargin" value="1" name="STAYLOGIN" id="STAYLOGIN" checked=""> <label class="radiolabel clr7 smalltxt" for="STAYLOGIN" id="STAYLOGINLABEL" style="font-size: 14px;position: relative;top: 2px;">Keep me logged in</label></div>
+
+
+<div class="paddt20">
+<input type="hidden" name="dLT" value="HMP">
+<input type="hidden" value="https://www.google.com/" name="dTHR" id="dTHR">
+<input type="submit" class="hp-button large" value="LOGIN" style="width: 100%;height: 47px;font-weight: bold;font-size: 16px;border-radius: 5px;" onclick="return logincheck();_gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'Popuploginbutton-Telugu-Clicked']);">
+</div>
+
+<div class="paddt15">
+<span class="fleft" style="color: #0274cb;margin-left: 28px;margin-top: 5px;"><a id="mlfpwd" onclick="forgotpasswd('mlfpwd');_gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'Popupforgotpassword-Telugu-Clicked']);" href="javascript:void(0);" class="link" style="color:#0274CB;font-size: 15px;">Forgot password?</a></span>	
+<span class="link fleft paddl10" style="margin-top: 5px;">|</span>	
+<span class="fleft paddl10"><a id="poppwd" onclick="otplogin('popotp'); ga('send', 'event','LoginViaOTP-WEB-Telugu','Login Via OTP','Popuplink Click'); ga('tracker1.send','event','LoginViaOTP-WEB-Telugu','Login Via OTP','Popuplink Click',{'nonInteraction': true});" href="javascript:void(0);" class="link" style="float:left; padding-top:5px; color: #0274cb;font-size: 15px;">Login Via OTP</a></span>
+</div>
+<div class="clear"> </div>
+
+<div id="dispstylgn" class="" style="display:none; left:auto !important; position:absolute; right:125px !important; top:64px;"><input type="checkbox" class="radiomargin" value="1" name="STAYLOGIN" id="STAYLOGIN" style="margin:0px;" checked=""> <label class="radiolabel clr7 smalltxt" for="STAYLOGIN" id="STAYLOGINLABEL">Keep me logged in</label></div>
+
+
+</form>
+
+</div>
+</div>
+    <div class="clear"></div>
+    
+                    
+
+        <div class="fleft paddl15 mob-none" style="color: #000000;font-weight: 700;padding-right: 10px;font-size: 14px;padding-top: 8px;letter-spacing: 0.7px;">Already a member? </div>
+        
+        
+
+        <div class="fleft">
+        <a href="#loginpopup" class="mob-none" id="open_loginpp" style="background: #fffbf7;color: #ff0202;text-decoration: none;padding: 7px 26px;border-radius: 7px;font-size: 11px;font-weight: 900;border: 1px solid #ff0202;letter-spacing: 0.7px;display: inline-block;margin-right: 10px;position:relative;" onclick="_gaq.push([]);">
+        LOG IN
+        </a>
+        <a href="" class="desk-none" style="background: transparent;color: #ff9902;text-decoration: none;padding: 7px 26px;border-radius: 7px;font-size: 11px;font-weight: 900;border: 1px solid #ff9902;letter-spacing: 0.7px;margin-right: 10px;">
+        LOG IN
+        </a>
+        </div>
+                            
+
+            
+                        <div class="fleft paddl8 pos-relative hp-help-menu mob-none" style="padding-top: 4px;">
+                            <div onmouseout="document.getElementById('hp-help-div').style.display='none'" onmouseover="document.getElementById('hp-help-div').style.display='block'">
+                                <img src="images/hp-helpicn.webp" width="23" height="23" alt="helpicon" style="cursor:pointer; background: white;
+                                border-radius: 18px;">
+                                                                
+                                <div id="hp-help-div" class="hp-help-ttip" style="display:none;">
+                                    <div class="hp-help-ttip-arw">
+                                        <div class="hp-help-arw"></div>
+                                    </div>
+                                    <div class="hp-help-ttipbg">
+                                        <div style="width:490px;letter-spacing:0.4px;">
+                                            <div id="div_help" class="fleft mediumtxt" style="width:300px; color:rgb(19, 18, 18);">
+                                                <div class="paddt5 paddl10">
+                                                    <div class="helpline-icon">
+                                                        <div class="fixed-helpline-icon">
+                                                            <div class="hdtxt1" style="font-family:Lato;font-weight: 700;">24x7 HELP : </div>
+                                                            <div class="paddt5 hdtxt" id="cntryphno" style="font-family:Lato;font-weight: 700;">INDIA :111111111111 </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hdot paddt10" id="marginhdot" style="width: 250px; margin: 0px;"><!--  --></div>
+                                                    <div>
+                                                        <div class="fleft paddt5" style="width:300px;">
+                                                            <div id="displayIN" style="display: none;"><div class="fleft paddt10" style="width:85px;"><b>INDIA</b></div><div class="fleft paddt10"> : 000000000</div></div>
+                                                            <div class="clear"><!-- --></div>
+                                                            <div id="displayUS"><div class="fleft paddt10" style="width:85px;"><b>USA</b></div><div class="fleft paddt10"> : 222222222222</div></div>
+                                                            <div class="clear"><!-- --></div>
+                                                            <div id="displayUK"><div class="fleft paddt10" style="width:85px;"><b>UK</b></div><div class="fleft paddt10"> : 333333333333333333</div></div><div class="clear"><!-- --></div>
+                                                            <div id="displayUAE" style="display: block;"><div class="fleft paddt10" style="width:85px;"><b>UAE</b></div><div class="fleft paddt10"> :8888888888889</div></div>
+                                                            <div class="clear"><!-- --></div>
+                                                            <div id="displayMY"><div class="fleft paddt10" style="width:85px;"><b>MALAYSIA</b></div><div class="fleft paddt10"> : 4444444444444</div></div><div class="clear"><!-- --></div>
+                                                            <div class="fleft paddt10" style="width:85px;"><b>SINGAPORE</b></div><div class="fleft paddt10"> : 55555555555</div><div class="clear"><!-- --></div>
+                                                            <div class="fleft paddt10" style="width:85px;"><b>CANADA</b></div><div class="fleft paddt10"> : 6666666666</div><div class="clear"><!-- --></div>
+                                                            <div class="fleft paddt10" style="width:85px;"><b>AUSTRALIA</b></div><div class="fleft paddt10"> : 7777777777778</div><div class="clear"><!-- --></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fleft" style="padding:35px 15px 0px 0;display:inline;">
+                                                <div style="border-right:1px solid #dcdcdc;height:205px;">&nbsp;</div>
+                                            </div>
+                                            <div id="div_help" class="fleft" style="padding-top:45px;">
+                                                    <a href="/contact-us.php?viewtab=livehelp&amp;gaact=HP&amp;gasrc=HELPLHTELUGU" class="menunrml clr7 arrow">Live Help</a>
+                                                    <a href="/contact-us.php?gaact=HP&amp;gasrc=HELPCONTELUGU" class="menunrml clr7 arrow">Contact Us</a>
+                                                    <a href="//profile.bharatmatrimony.com/support/support-index.php?member=no&amp;gaact=HP&amp;gasrc=HELPTICKETBHARAT" class="menunrml clr7 arrow">Create Support Ticket</a>
+                                                    <a href="/contact-us.php?viewtab=feedback&amp;gaact=HP&amp;gasrc=HELPFEEDBACKTELUGU" class="menunrml clr7 arrow">Feedback</a>
+                                                    <a href="/contact-us.php?viewtab=businessqueries&amp;gaact=HP&amp;gasrc=HELPBQTELUGU" class="menunrml clr7 arrow">Business Queries</a>
+                                            </div>
+                                            <div class="clear"><!--  --></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"><!--  --></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="clear"><!----></div>
+                <!-- Header -->
+            </div>
+            
+            
+            <!-- Registration Part -->
+                                    <script>
+                                    function GApushGenderSel()
+                                    {
+                                        if (REGISTERED_BY.value == 8 || REGISTERED_BY.value == 10)
+                                        {
+                                            _gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'GenderMale-SelectedFilled']);
+                                        }
+                                        else if (REGISTERED_BY.value == 9 || REGISTERED_BY.value == 11)
+                                        {
+                                            _gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'GenderFemale-SelectedFilled']);
+                                        }
+                                    }
+
+                                    function GApushMotherTongue()
+                                    {
+                                            _gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'MotherTongue-SelectedFilled']);
+                                    }
+
+                                    </script>
+
+                            <div id="hp-regform-new1" style="display:none;"> 
+                                 
+                                        <dl class="fb_field" id="DOB_DIV">
+                                            <dt>
+                                                <label for="DOBDAY">
+                                                    <span id="mpage"></span>
+                                                </label>
+                                            </dt>
+                                            <dd id="DOBBOX">
+                                                <div class="fleft paddr4"> </div> 
+                                                <div class="fleft" id="orage"> </div>
+                                                 
+                                            </dd>
+                                        </dl>	
+                                        <div class="fleft paddl5"> <input type="text"> </div> 
+                                                                            
+                            </div>
+
+                        
+                <div class="clear"><!----></div>
+                <!-- Registration Part -->
+                
+                <!-- New Registration Start -->
+
+
+<script type="text/javascript" language="javascript" src="//imgs.telugumatrimony.com/scripts/hp-bm-js.js?randid=05092018"></script>
+<script type="text/javascript" language="javascript" src="//imgs.telugumatrimony.com/scripts/home-register-err-msg-track-y.js?randid=21082019"></script>
+<script type="text/javascript" language="javascript" src="//imgs.telugumatrimony.com/scripts/hp-register-validation-js.js?randid=210420211629"></script>
+<script type="text/javascript" src="//imgs.telugumatrimony.com/scripts/home-help-phno.js?random=28112017"></script>
+<link rel="stylesheet" type="text/css" href="//imgs.telugumatrimony.com/bmstyles/hp-colorbox.css?randid=28122016">
+
+                <div class="dh-form-width" id="bmfont">
+            
+
+
+   <div class="dh-frmwidth1">
+      <span class="txt-left mob-none" style="font-size: 36px;font-weight: 700;color:#FFFFFF;letter-spacing:2.1px; margin-right: 186px; ;">  People found their perfect match here!  </span><br><br><br>
+      <span class="txt-left mob-none" style="font-size: 22px;font-weight: 700;color:#FFFFFF;letter-spacing:1.3px;  margin-right: 295px; ;"> You too can find a life partner </span>
+      <form method="post" class="dh-mainform" enctype="multipart/form-data" name="registrationform1" action="//profile.telugumatrimony.com/register/campaignregistration-track-y.php">
+      
+      <div class="dh-frmbdr">
+      <div style="position: relative;" class="fleft mob-wdth100">
+          <div class="paddb10 regis-errtxt" id="profile-err" style="width: 215px;text-align: left;line-height: 13px;"></div>
+          <div class="paddb10 regis-errtxt" id="gender-err"></div>
+               
+        <div style="position:relative;" class="fleft mob-wdth100">	
+          <div class="dh-frmfield1" id="reg-border">
+            <div class="desp-label txt-left"><label for="REGISTERED_BY_VALUE">Matrimony Profile for</label></div>
+            <div id="dd" class="desp-drpdwn paddt10 mob-prof" tabindex="1" onfocus="showGreenBord('dd')" onblur="hideGreenBord('dd')">
+                <select class="desp-drpdwnn" name="" id="">
+                    <option value=""></option>
+                    <option value="">Myself</option>
+                    <option value="">Daughter</option>
+                    <option value="">Son</option>
+                    <option value="">Sister</option>
+                    <option value="">Brother</option>
+                    <option value="">Relative</option>
+                    <option value="">Friend</option>
+                </select>
+               <!-- <span style="color:#333333;font-size: 14px;letter-spacing:0.8px;" id="selprofile">Select Profile</span>
+               
+               <ul class="regdropdown bord-green" name="" id="REGISTERED_BY_VALUE" onclick="genopt(); gentrack(); _gaq.push([]);GApushGenderSel(); " onkeydown="" onfocus="" onblur="">
+               <div style="width: 224px;position: absolute;left: 0px;height: 7px;top: -7px;background: #fff;" class="mob-none"> </div>             
+             
+             <li class="setregisteredbyvalue" id="1" onclick="mprofile(this.id);" style="text-align: left;"> <input name="" type="radio" id="regpro2" value="1"><label for="regpro2">Myself</label></li>
+              <li class="setregisteredbyvalue" id="9" onclick="mprofile(this.id);"><input name="" type="radio" value="9"><label for="regpro3">Daughter</label></li>
+              <li class="setregisteredbyvalue" id="8" onclick="mprofile(this.id);"><input name="" type="radio" value="8"><label for="regpro3">Son</label></li> 
+               <br clear="all">
+            <li class="setregisteredbyvalue" id="11" onclick="mprofile(this.id);" style="text-align: left;"><input name="" type="radio" value="11"><label for="regpro3">Sister</label></li>
+            
+           
+           <li class="setregisteredbyvalue" id="10" onclick="mprofile(this.id);"><input name="" type="radio" value="10"><label for="regpro3">Brother</label></li>
+           
+           
+              
+              <li class="setregisteredbyvalue" id="4" onclick=" mprofile(this.id);"><input name="" type="radio" value="4"><label for="regpro3">Relative</label></li>
+              
+              <li class="setregisteredbyvalue" id="5" onclick="mprofile(this.id);"><input name="" type="radio" value="5"><label for="regpro3">Friend</label></li>
+               
+               </ul> -->
+            </div>
+         </div>
+         
+         <div class="fleft gender-border" style="margin-top:-5px;display:none;position:absolute;bottom: -46px;left: 0px;" id="gender-border">
+            <ul class="gendropdn" id="GENDER_VALUE">
+               <li class="fleft" style="padding: 18px 28px 20px 23px;float: left;background:#fff;border-bottom-left-radius: 10px;" onclick="genCheck('M'); javascript: var val=0; val = RegGATrack(this.value,'Hregform-male',document.getElementById('gatrack-gender-m-count').value);if(val==1){document.getElementById('gatrack-gender-m-count').value=1;}_gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'GenderMale-SelectedFilled']);">
+                  <input type="radio" id="gendermale" name="GENDER" value="M"><label for="male">Male</label> 
+               </li>
+               <li class="fleft" style="padding: 18px 64px 20px 23px;float: left;background:#fff;border-bottom-right-radius: 10px;" onclick="genCheck('F'); javascript: var val=0; val = RegGATrack(this.value,'Hregform-female',document.getElementById('gatrack-gender-f-count').value);if(val==1){document.getElementById('gatrack-gender-f-count').value=1;}_gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'GenderFemale-SelectedFilled']);">
+                  <input type="radio" id="genderfemale" name="GENDER" value="F"><label for="female">Female</label>
+               </li>
+               <div class="clear"> </div>
+            </ul>
+         </div>
+         </div>
+      </div>
+         
+          <div style="float:left;width:1px;background:#fff;height: 89px;" class="mob-none"><div style="border-right:1px solid #e3e3e3;display: inline-block;position: relative;height: 36px;top: 35px;"> </div> </div>
+         
+          <input type="hidden" name="REGISTERED_BY" value="" id="REGISTERED_BY">
+           <div class="fleft mob-wdth100" style="position:relative;">
+           <div class="paddb10 regis-errtxt" id="name-err"></div>
+           <div class="fleft dh-frmfield2" id="name-border">
+            <div class="desp-label" id="mpname">  <label for="NAME">Name</label> </div>
+            <div style="padding-top: 10px;">
+            
+            <input type="text" name="NAME" id="NAME" maxlength="40" tabindex="2" class="hp-regform-txtfield-new regisplacehold dh-nametxt" value="" autocomplete="name" onblur="_gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'Name-FieldSelected']); ValnameCon(); ValnameConFocusout();hideGreenBord('NAME')" onkeyup="InputBoldval(id);" onpaste="return isCharKey(event);" onkeydown="return isCharKey(event); ValnameCon(); " onclick="ValnameCon();" onfocus="ValnameCon(); valCheckGender_Focus();showGreenBord('NAME')" placeholder="Enter Name" <="" div="">
+            
+           </div>
+           </div>
+
+           
+            <div style="float:left;width:1px;background:#fff;height: 89px;" class="mob-none"><div style="border-right:1px solid #e3e3e3;display: inline-block;position: relative;height: 36px;top: 35px;"> </div> </div>
+            
+            <div style="position:relative;" class="fleft mob-wdth100">	
+            <div class="paddb10 regis-errtxt" id="mobile-err"></div>
+            <div class="paddb10 regis-errtxt" id="countrycode-err"></div>
+          <div class="fleft mobile-border dh-frmfield3" id="mobile-border">
+            <div class="desp-label"><label for="M_COUNTRYCODE">Mobile Number
+                        </label></div>
+            <div style="padding-top: 5px;" class="mobselect">
+            
+             <select class="bm-cntry dh-ctry-code" name="M_COUNTRYCODE" id="M_COUNTRYCODE" onfocus="showGreenBord('M_COUNTRYCODE')" onblur="ValnameCon();hideGreenBord('M_COUNTRYCODE')" onchange="valCountryFun(this.value); InputBoldval(id);  getcntrval();_gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'CountryCode-SelectedFilled']);GApushMotherTongue(); " style="color: rgb(0, 0, 0);">
+                                                    <option value="0" style="font-weight:700;">Code</option>
+                                                        <option data-text="India (+91)" data-value="+91" value="98" selected="">+91</option>
+                                                        <option data-text="United States of America (+1)" data-value="+1" value="222">United States of America (+1)</option>
+                                                        <option data-text="United Arab Emirates (+971)" data-value="+971" value="220">United Arab Emirates (+971)</option>
+                                                        <option data-text="United Kingdom (+44)" data-value="+44" value="221">United Kingdom (+44)</option>
+                                                        <option data-text="Australia (+61)" data-value="+61" value="13">Australia (+61)</option>
+                                                        <option data-text="Singapore (+65)" data-value="+65" value="189">Singapore (+65)</option>
+                                                        <option data-text="Canada (+1)" data-value="+1" value="39">Canada (+1)</option>
+                                                        <option data-text="Qatar (+974)" data-value="+974" value="173">Qatar (+974)</option>
+                                                        <option data-text="Kuwait (+965)" data-value="+965" value="114">Kuwait (+965)</option>
+                                                        <option data-text="Oman (+968)" data-value="+968" value="161">Oman (+968)</option>
+                                                        <option data-text="Bahrain (+973)" data-value="+973" value="17">Bahrain (+973)</option>
+                                                        <option data-text="Saudi Arabia (+966)" data-value="+966" value="185">Saudi Arabia (+966)</option>
+                                                        <option data-text="Malaysia (+60)" data-value="+60" value="129">Malaysia (+60)</option>
+                                                        <option data-text="Germany (+49)" data-value="+49" value="80">Germany (+49)</option>
+                                                        <option data-text="New Zealand (+64)" data-value="+64" value="153">New Zealand (+64)</option>
+                                                        <option data-text="France (+33)" data-value="+33" value="73">France (+33)</option>
+                                                        <option data-text="Ireland (+353)" data-value="+353" value="102">Ireland (+353)</option>
+                                                        <option data-text="Switzerland (+41)" data-value="+41" value="203">Switzerland (+41)</option>
+                                                        <option data-text="South Africa (+27)" data-value="+27" value="193">South Africa (+27)</option>
+                                                        <option data-text="Sri Lanka (+94)" data-value="+94" value="195">Sri Lanka (+94)</option>
+                                                        <option data-text="Indonesia (+62)" data-value="+62" value="99">Indonesia (+62)</option>
+                                                        <option data-text="Nepal (+977)" data-value="+977" value="149">Nepal (+977)</option>
+                                                        <option data-text="Pakistan (+92)" data-value="+92" value="162">Pakistan (+92)</option>
+                                                        <option data-text="Bangladesh (+880)" data-value="+880" value="18">Bangladesh (+880)</option>
+                                                        <option data-text="Afghanistan (+93)" data-value="+93" value="1">Afghanistan (+93)</option>
+                                                        <option value="no" style="font-weight:700;">Show more countries</option>
+                                                    </select>
+                                                    
+            <input type="text" tabindex="3" placeholder="Enter Number" class="regisplacehold dh-mob-num" name="MOBILENO" id="MOBILENO" onclick="ValmobileCon();showGreenBord('MOBILENO'); " onkeydown="return isNumberKey(event); InputBoldval(id); ValmobileCon(); " maxlength="20" onfocus="valCheckGender_Focus(); ValmobileCon();  if(this.value=='Mobile Number') {this.value=''; }" onblur="if(this.value=='') {this.value = ''; };  _gaq.push(['_trackEvent', 'Teluguhomepage-Desktop', 'Teluguhomepage-Desktop-Default', 'MobileNumber-FieldSelected']); ValmobileConFocusout_Click();hideGreenBord('MOBILENO')" onkeyup="InputBoldval(id); " autocomplete="tel" onchange="ValmobileConFocusout();" value=""> </div>
+          
+            
+                                                
+         </div> 
+         </div> 
+          <script>
+          function valCountryFun(cntryValue)
+            {   
+                var countrycodeborder = document.getElementById("mobile-border");	
+                    registrationform1.MOBILENO.focus(); 
+                if(cntryValue=='0')
+                {	$("#mobile-err").html('');
+                    countrycodeborder.className += " regis-err";$("#countrycode-err").html(regFirstFormErr[6][0]);
+                } else {
+                    document.getElementById("mobile-border").classList.remove("regis-err");//nn
+                    $("#countrycode-err").html('');
+                }
+                
+                $("#M_COUNTRYCODE").each(function () {this.style.setProperty( 'color', '#000' );});  
+                if(cntryValue=="no") 
+                { 
+                   $.ajax({
+                   type: 'post',
+                   url: '/register/ajax_registration-track-y.php',
+                   data: {
+                   Newshowcountry:cntryValue,
+                   },
+                   success: function (response) 
+                   {
+                   $('#M_COUNTRYCODE').html(response);
+                   }
+                  });
+                     
+                }
+            }
+</script>
+        
+        <input type="hidden" value="0" name="gatrack-gender-m-count" id="gatrack-gender-m-count">
+        <input type="hidden" value="0" name="gatrack-gender-f-count" id="gatrack-gender-f-count">
+        <input type="hidden" name="fbsignup" id="fbsignup" value="">
+        <input type="hidden" name="statekey" id="statekey" value="">
+        <input type="hidden" name="citykey" id="citykey" value="">
+        <input type="hidden" name="about" id="about" value="">
+        <input type="hidden" name="relationstatus" id="relationstatus" value="">
+        <input type="hidden" name="educationkey" id="educationkey" value="">
+        <input type="hidden" name="educationval" id="educationval" value="">
+        <input type="hidden" name="occupationval" id="occupationval" value="">
+        <input type="hidden" name="FBDETAILS" id="FBDETAILS" value="">
+        <input type="hidden" name="InsId" id="InsId" value="">
+        <input type="hidden" name="profilediv_reg" id="profilediv_reg" value="0">
+        <input type="hidden" name="cookieType" value="external">
+        <input type="hidden" name="cookieVal" value="172.22.1.60;172.22.5.8::002::::0::0020000002014::N::2022-02-13 16:00:36::">								
+         <div class="fleft mob-wid100">
+            <input type="button" tabindex="4" onclick="return validateregistrationform(1);" class="hp-button hp-regbtn dh-btn" alt="REGISTER FREE" value="REGISTER FREE"> 
+         </div>
+         <div class="clear"><!----></div>
+         <!--<div id="name_label" style="position:absolute;color: #000;padding: 4px 0px 0px 228px;font-size: 13px;display:none;text-align:left;width: 213px;">You can choose to protect your name after registration.</div>-->
+          <div class="clear"> </div>
+         <script>
+     
+function getcntrval()
+{ $("#M_COUNTRYCODE").each(function () {this.style.setProperty( 'color', '#000' );});  
+    var getcntrvalindex=document.registrationform1.M_COUNTRYCODE.selectedIndex;
+    var getcntrval=document.registrationform1.M_COUNTRYCODE.options[getcntrvalindex].value;
+    
+    document.getElementById('COUNTRY').value = getcntrval;
+
+}
+</script>
+        
+         
+         <input type="hidden" name="COUNTRY" id="COUNTRY" value="98">
+         <input type="hidden" value="" id="GEN_VAL" name="GEN_VAL">
+         <input type="hidden" name="GENDER" value="" id="GENDER">
+          <input type="hidden" name="result" value="" id="result">
+          <input type="hidden" name="trackid" value="00500000037">
+          
+         <div class="clear"> </div>
+
+      </div>		    
+      </div>
+      </form>
+      
+         <div class="fright paddt10 dh-terms">
+            <span class="paddl5" style="display:inline-block; font-size:12px; line-height: 13px;color:#fcfcfc;letter-spacing:0.8px;">By clicking register free, I agree to the <a href="" target="_blank" style="text-decoration:underline;color:#fcfcfc;letter-spacing:0.8px;">T&amp;C</a> and <a href="/privacy-policy.php" target="_blank" style="text-decoration:underline;color:#fcfcfc;letter-spacing:0.8px;">Privacy Policy</a></span><div class="paddb10 regis-errtxt-terms" id="regis-errtxt-terms" style="display:none;">Please read and confirm acceptance of our Terms and Conditions, Privacy Policy, and to receive emails and telephonic communications from us.</div>
+         </div>
+      
+   </div>
+   
+   
+   
+   <!-- New Registration End -->
+
+
+    
+                </div>
+                <div class="clear"><!----></div>
+                
+    </div>				
+
+
+        <div onclick="regPDLogTrackAjax('footer-part')" class="mob-threepts"> <!--Log tracking footer part -->
+        <!-- Three column icons Start -->
+        <div class="frmbtn-icn">  
+        <div class="btmopacity"></div>
+        <div class="hp-wrapper">
+        <div class="fleft txt-left frmbtn-icn1">
+        <div class="fleft ftrpadtp"><img src="//imgs.telugumatrimony.com/bmimgs/sem-contact-genuine-icon.png" width="42" height="49" alt="Contact genuine"></div>
+        <div class="fleft hp-lheight18  hppaddl20 frmbtmwidth1"> Contact genuine profiles with 100% verified mobile numbers</div>
+        </div>
+        <div class="fleft txt-left frmbtn-icn2">
+        <div class="fleft ftrpadtp"><img src="//imgs.telugumatrimony.com/bmimgs/sem-limca-book-icon.png" alt="Highest number of  documented marriages" width="50" height="50"></div>
+        <div class="fleft hp-lheight18 hppaddl20 frmbtmwidth2"> Highest number of documented  marriages online <span class="fntsml">- Limca Book of Records </span></div></div>
+        </div>
+        <div class="fleft txt-left frmbtn-icn3">
+        <div class="fleft ftrpadtp"> <img src="//imgs.telugumatrimony.com/bmimgs/sem-most-trust-icon.png" alt="The most trusted matrimony brand" width="38" height="52"> </div>
+        <div class="fleft hp-lheight18 hppaddl20 frmbtmwidth3">The most trusted matrimony  brand <span class="fntsml">- The Brand Trust Report</span></div></div>
+        </div>
+        <div class="clear"><!----></div>
+        </div>				
+        </div>				
+        <div class="clear"><!----></div>
+        <!-- Three column icons End -->
+     </div>
+
+
+            <!-- Registration Part End-->			
+                
+<div class="clear"><!----></div>
+
+ 
+<div style="font-family: Lato;font-size: 13px;line-height: 20px;letter-spacing: .94px;color: #999;margin: 20px 10px 20px 10px;" class="mob-pt20"> This website is strictly for matrimonial purpose only and not a dating website. <br>
+Copyright © 2022. All rights reserved.</div> 
+     
+</center>
+        
+</body>
+</html>

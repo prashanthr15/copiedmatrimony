@@ -1,0 +1,119 @@
+.bmlogo-width {
+  width: 150px;
+  height: 48px;
+  border-radius: 11px;
+}
+.loginoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+
+.loginoverlay:target {
+  visibility: visible !important;
+  opacity: 1;
+}
+.loginpopup {
+  padding: 29px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  position: absolute;
+  top: 20%;
+  left: 36%;
+}
+.dhoni-bg {
+  position: relative;
+  height: 658px;
+  background: #e3dacb
+    url(https://images.indianexpress.com/2020/08/arranged-marriage-759.jpg)
+    no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  min-height: 101vh;
+  margin-top: -1px;
+}
+.dhoni-bg-others {
+  position: relative;
+  height: 652px;
+  background: #e3dacb
+    url(https://images.indianexpress.com/2020/08/arranged-marriage-759.jpg)
+    no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  min-height: 102vh;
+  margin-top: -1px;
+}
+.dh-frmbdr {
+  margin-top: 35px;
+  position: relative;
+  box-shadow: 0 0 7.5px 2.5px rgba(153, 153, 153, 0.15);
+  float: left;
+  border-radius: 10px;
+}
+.paddr4 {
+  padding-right: 4px;
+}
+.paddt5 {
+  padding-top: 5px;
+}
+.paddr5 {
+  padding-right: 5px;
+}
+.paddb5 {
+  padding-bottom: 5px;
+}
+.paddl5 {
+  padding-left: 5px;
+}
+.paddl8 {
+  padding-left: 8px;
+}
+.padd8 {
+  padding: 8px;
+}
+.paddt10 {
+  padding-top: 10px;
+}
+.paddr10 {
+  padding-right: 10px;
+}
+.paddb10 {
+  padding-bottom: 10px;
+}
+.paddl10 {
+  padding-left: 10px;
+}
+.paddt15 {
+  padding-top: 15px;
+}
+.paddr15 {
+  padding-right: 15px;
+}
+.paddb15 {
+  padding-bottom: 15px;
+}
+.paddl15 {
+  padding-left: 15px;
+}
+.paddt20 {
+  padding-top: 20px;
+}
+.paddb20 {
+  padding-bottom: 20px;
+}
+.paddl20 {
+  padding-left: 20px;
+}
+.paddt30 {
+  padding-top: 30px;
+}
